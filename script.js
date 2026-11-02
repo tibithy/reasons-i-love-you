@@ -1,0 +1,121 @@
+
+const reasons = [
+  "Porque tu sonrisa tiene una forma especial de alegrarme el día.",
+  "Porque me encanta tu manera de ser.",
+  "Porque contigo los momentos pequeños se vuelven recuerdos enormes.",
+  "Porque tu voz es una de mis cosas favoritas.",
+  "Porque admiro la persona que eres.",
+  "Porque me encanta compartir mis días contigo.",
+  "Porque siempre hay algo nuevo que descubrir de ti.",
+  "Porque tienes detalles que hacen que seas única.",
+  "Porque me alegra que nuestras historias se hayan encontrado."
+];
+
+const finalMessage = `
+Quería hacerte algo diferente, algo que pudieras
+guardar y volver a visitar cuando quisieras.
+
+A veces las palabras se quedan cortas para explicar
+lo especial que puede ser una persona.
+
+Gracias por los momentos bonitos, las risas,
+las conversaciones y todos esos pequeños recuerdos
+que hemos construido.
+
+No sé qué nos espera en el futuro, pero sí sé
+que valoro muchísimo cada momento que compartimos.
+
+Espero que este pequeño regalo te recuerde
+lo mucho que te quiero.
+
+Con cariño, para ti. ♡
+`;
+
+let discovered = [];
+
+const grid = document.getElementById("heartGrid");
+
+function buildGame() {
+  grid.innerHTML = "";
+
+  reasons.forEach((reason, index) => {
+    const card = document.createElement("button");
+
+    card.className = "heart-card";
+    card.innerHTML = `
+      <span class="number">REASON ${index + 1}</span>
+      <span class="icon">♡</span>
+      <span>Descubrir</span>
+    `;
+
+    card.addEventListener("click", () => {
+      if (discovered.includes(index)) return;
+
+      discovered.push(index);
+      card.classList.add("opened");
+      card.querySelector(".icon").textContent = "♥";
+      card.querySelector("span:last-child").textContent = "Descubierto";
+
+      document.getElementById("count").textContent =
+        `${discovered.length} / ${reasons.length}`;
+
+      document.getElementById("progress").style.width =
+        `${discovered.length / reasons.length * 100}%`;
+
+      document.getElementById("reasonTitle").textContent =
+        `Razón número ${index + 1}`;
+
+      document.getElementById("reasonText").textContent = reason;
+
+      document.getElementById("popup").classList.remove("hidden");
+    });
+    
+    grid.appendChild(card);
+  });
+}
+
+document.getElementById("start").addEventListener("click", () => {
+  document.getElementById("welcome").classList.add("hidden");
+  document.getElementById("game").classList.remove("hidden");
+});
+
+document.getElementById("closePopup").addEventListener("click", () => {
+  document.getElementById("popup").classList.add("hidden");
+
+  if (discovered.length === reasons.length) {
+    document.getElementById("unlock").classList.remove("hidden");
+  }
+});
+
+document.getElementById("finalButton").addEventListener("click", () => {
+  document.getElementById("game").classList.add("hidden");
+  document.getElementById("final").classList.remove("hidden");
+  document.getElementById("finalMessage").textContent = finalMessage;
+});
+
+document.getElementById("restart").addEventListener("click", () => {
+  discovered = [];
+  document.getElementById("final").classList.add("hidden");
+  document.getElementById("game").classList.remove("hidden");
+  document.getElementById("unlock").classList.add("hidden");
+  document.getElementById("count").textContent = "0 / 9";
+  document.getElementById("progress").style.width = "0%";
+  buildGame();
+});
+
+function createFloatingHearts() {
+  const container = document.getElementById("floatingHearts");
+
+  for (let i = 0; i < 16; i++) {
+    const heart = document.createElement("span");
+    heart.className = "floating-heart";
+    heart.textContent = "♥";
+    heart.style.left = Math.random() * 100 + "%";
+    heart.style.animationDelay = Math.random() * 12 + "s";
+    heart.style.fontSize = (12 + Math.random() * 20) + "px";
+    container.appendChild(heart);
+  }
+}
+
+buildGame();
+createFloatingHearts();

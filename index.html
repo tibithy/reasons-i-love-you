@@ -1,0 +1,88 @@
+
+
+<div class="background-hearts" id="floatingHearts"></div>
+
+<main class="container">
+
+  <section id="welcome" class="screen welcome">
+    <div class="rose">🌹</div>
+    <p class="eyebrow">A SPECIAL GIFT FOR YOU</p>
+
+    <h1>Reasons <span>I Love You</span></h1>
+
+    <p class="intro">
+      Hay cosas que a veces no puedo explicar con palabras...
+      así que preparé algo para ti.
+    </p>
+
+    <button class="primary-btn" id="start">
+      Descubrir mi regalo ♡
+    </button>
+
+    <p class="bottom-note">Made with love, just for you.</p>
+  </section>
+
+  <section id="game" class="screen hidden">
+
+    <p class="eyebrow">CHAPTER 01 · MY FAVORITE PERSON</p>
+
+    <h2>9 razones por las que<br><span>te quiero tanto.</span></h2>
+
+    <p class="intro">
+      Cada corazón guarda algo que quiero decirte.
+      Toca todos para descubrirlo.
+    </p>
+
+    <div class="progress-info">
+      <span>Tu colección de razones</span>
+      <span id="count">0 / 9</span>
+    </div>
+
+    <div class="progress-track">
+      <div id="progress"></div>
+    </div>
+
+    <div class="heart-grid" id="heartGrid"></div>
+
+    <div class="unlock hidden" id="unlock">
+      <p>♡ Has descubierto todas mis razones ♡</p>
+      <button class="primary-btn" id="finalButton">
+        Una última sorpresa 💌
+      </button>
+    </div>
+
+  </section>
+
+  <section id="final" class="screen final hidden">
+    <div class="envelope">💌</div>
+
+    <p class="eyebrow">A LETTER FOR YOU</p>
+
+    <h2>Querida <span>tú...</span></h2>
+
+    <div class="letter">
+      <p id="finalMessage"></p>
+    </div>
+
+    <p class="signature">Con muchísimo cariño. ♡</p>
+
+    <button class="secondary-btn" id="restart">
+      Volver a recordar ♡
+    </button>
+  </section>
+
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <div class="popup-heart">♥</div>
+      <p class="eyebrow">UNA RAZÓN MÁS...</p>
+      <h2 id="reasonTitle"></h2>
+      <p id="reasonText"></p>
+      <button class="primary-btn" id="closePopup">
+        Guardar en mi corazón ♡
+      </button>
+    </div>
+  </div>
+
+</main>
+
+<footer>MADE WITH LOVE · ♡</footer>

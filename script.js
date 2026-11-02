@@ -1,34 +1,30 @@
 
 const reasons = [
-  "Porque tu sonrisa tiene una forma especial de alegrarme el día.",
-  "Porque me encanta tu manera de ser.",
-  "Porque contigo los momentos pequeños se vuelven recuerdos enormes.",
-  "Porque tu voz es una de mis cosas favoritas.",
+  "Porque sin importar que estas para mi.",
+  "Porque me encanta como eres.",
+  "Porque a tu lado siento una felicidad que jamas senti.",
+  "Porque tu presencia calma todo",
   "Porque admiro la persona que eres.",
-  "Porque me encanta compartir mis días contigo.",
-  "Porque siempre hay algo nuevo que descubrir de ti.",
-  "Porque tienes detalles que hacen que seas única.",
-  "Porque me alegra que nuestras historias se hayan encontrado."
+  "Porque eres lo que a Dios tanto le pedi.",
+  "Porque aparte de mi novia eres mi Mejor Amiga.",
+  "Porque eres el sol que ilumina mis dias .",
+  "Porque me alegra que fuiste y eres mi coincidencia mas bonita."
 ];
 
 const finalMessage = `
-Quería hacerte algo diferente, algo que pudieras
-guardar y volver a visitar cuando quisieras.
+Mi Nirel:
 
-A veces las palabras se quedan cortas para explicar
-lo especial que puede ser una persona.
+Hay cosas que no se pueden explicar tan fácilmente, porque son tan profundas que expresarlas llevaría muchísimo tiempo. Pero tan solo quería decirte que te amo con todo mi corazón.
 
-Gracias por los momentos bonitos, las risas,
-las conversaciones y todos esos pequeños recuerdos
-que hemos construido.
+Eres esa luz en mis días que, sin importar cuánta oscuridad haya, me ilumina y no me deja caer. Eres esa persona que, al despertar, se convierte en mi primer pensamiento.
 
-No sé qué nos espera en el futuro, pero sí sé
-que valoro muchísimo cada momento que compartimos.
+Llevamos algunos meses siendo novios y estamos cerca de cumplir nuestro primer año, pero todo este tiempo que he tenido la dicha de conocerte me ha demostrado que vale la pena seguir construyendo esta relación.
 
-Espero que este pequeño regalo te recuerde
-lo mucho que te quiero.
+Sé que soy una persona con muchos problemas, pero te aseguro que hago todo lo posible para demostrarte que este amor es sincero y que mi intención es que sea eterno.
 
-Con cariño, para ti. ♡
+Sin más que decir...
+
+TE AMO CON MI ALMA ENTERA, NIREL. ♡
 `;
 
 let discovered = [];

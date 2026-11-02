@@ -1,88 +1,99 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reasons I Love You ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-<div class="background-hearts" id="floatingHearts"></div>
+<body>
 
-<main class="container">
+  <div class="background-hearts" id="floatingHearts"></div>
 
-  <section id="welcome" class="screen welcome">
-    <div class="rose">🌹</div>
-    <p class="eyebrow">A SPECIAL GIFT FOR YOU</p>
+  <main class="container">
 
-    <h1>Reasons <span>I Love You</span></h1>
+    <section id="welcome" class="screen welcome">
+      <div class="rose">🌹</div>
+      <p class="eyebrow">A SPECIAL GIFT FOR YOU</p>
+      <h1>Reasons <span>I Love You</span></h1>
 
-    <p class="intro">
-      Hay cosas que a veces no puedo explicar con palabras...
-      así que preparé algo para ti.
-    </p>
+      <p class="intro">
+        Hay cosas que a veces no puedo explicar con palabras...
+        así que preparé algo para ti.
+      </p>
 
-    <button class="primary-btn" id="start">
-      Descubrir mi regalo ♡
-    </button>
-
-    <p class="bottom-note">Made with love, just for you.</p>
-  </section>
-
-  <section id="game" class="screen hidden">
-
-    <p class="eyebrow">CHAPTER 01 · MY FAVORITE PERSON</p>
-
-    <h2>9 razones por las que<br><span>te quiero tanto.</span></h2>
-
-    <p class="intro">
-      Cada corazón guarda algo que quiero decirte.
-      Toca todos para descubrirlo.
-    </p>
-
-    <div class="progress-info">
-      <span>Tu colección de razones</span>
-      <span id="count">0 / 9</span>
-    </div>
-
-    <div class="progress-track">
-      <div id="progress"></div>
-    </div>
-
-    <div class="heart-grid" id="heartGrid"></div>
-
-    <div class="unlock hidden" id="unlock">
-      <p>♡ Has descubierto todas mis razones ♡</p>
-      <button class="primary-btn" id="finalButton">
-        Una última sorpresa 💌
+      <button class="primary-btn" id="start">
+        Descubrir mi regalo ♡
       </button>
-    </div>
 
-  </section>
+      <p class="bottom-note">Made with love, just for you.</p>
+    </section>
 
-  <section id="final" class="screen final hidden">
-    <div class="envelope">💌</div>
+    <section id="game" class="screen hidden">
+      <p class="eyebrow">CHAPTER 01 · MY FAVORITE PERSON</p>
+      <h2>9 razones por las que<br><span>te quiero tanto.</span></h2>
 
-    <p class="eyebrow">A LETTER FOR YOU</p>
+      <p class="intro">
+        Cada corazón guarda algo que quiero decirte.
+        Toca todos para descubrirlo.
+      </p>
 
-    <h2>Querida <span>tú...</span></h2>
+      <div class="progress-info">
+        <span>Tu colección de razones</span>
+        <span id="count">0 / 9</span>
+      </div>
 
-    <div class="letter">
-      <p id="finalMessage"></p>
-    </div>
+      <div class="progress-track">
+        <div id="progress"></div>
+      </div>
 
-    <p class="signature">Con muchísimo cariño. ♡</p>
+      <div class="heart-grid" id="heartGrid"></div>
 
-    <button class="secondary-btn" id="restart">
-      Volver a recordar ♡
-    </button>
-  </section>
+      <div class="unlock hidden" id="unlock">
+        <p>♡ Has descubierto todas mis razones ♡</p>
+        <button class="primary-btn" id="finalButton">
+          Una última sorpresa 💌
+        </button>
+      </div>
+    </section>
 
-  <div id="popup" class="popup hidden">
-    <div class="popup-content">
-      <div class="popup-heart">♥</div>
-      <p class="eyebrow">UNA RAZÓN MÁS...</p>
-      <h2 id="reasonTitle"></h2>
-      <p id="reasonText"></p>
-      <button class="primary-btn" id="closePopup">
-        Guardar en mi corazón ♡
+    <section id="final" class="screen final hidden">
+      <div class="envelope">💌</div>
+      <p class="eyebrow">A LETTER FOR YOU</p>
+      <h2>Querida <span>tú...</span></h2>
+
+      <div class="letter">
+        <p id="finalMessage"></p>
+      </div>
+
+      <p class="signature">Con muchísimo cariño. ♡</p>
+
+      <button class="secondary-btn" id="restart">
+        Volver a recordar ♡
       </button>
+    </section>
+
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        <div class="popup-heart">♥</div>
+        <p class="eyebrow">UNA RAZÓN MÁS...</p>
+        <h2 id="reasonTitle"></h2>
+        <p id="reasonText"></p>
+
+        <button class="primary-btn" id="closePopup">
+          Guardar en mi corazón ♡
+        </button>
+      </div>
     </div>
-  </div>
 
-</main>
+  </main>
 
-<footer>MADE WITH LOVE · ♡</footer>
+  <footer>MADE WITH LOVE · ♡</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
